@@ -446,6 +446,16 @@ body.light-theme .footer-bottom {
 /* Адаптация кнопки в светлой теме */
 body.light-theme .theme-toggle:hover {
     background: rgba(0, 0, 0, 0.06);
+    @media (max-width: 768px) {
+    .theme-toggle {
+        font-size: 20px;
+        padding: 6px 10px;
+    }
+    /* Если меню скрыто на мобилках, кнопка остаётся */
+    .header-inner {
+        flex-wrap: wrap;
+    }
+}
 }
     }
 }
