@@ -334,5 +334,118 @@ body {
         flex-direction: column;
         gap: 8px;
         text-align: center;
+        /* === КНОПКА ПЕРЕКЛЮЧЕНИЯ ТЕМ === */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: background 0.2s;
+    color: inherit;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* === СВЕТЛАЯ ТЕМА (по умолчанию) === */
+body.light-theme {
+    background: #f5f7fa;
+    color: #1a1a2e;
+}
+
+body.light-theme .header {
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+body.light-theme .nav a {
+    color: #333;
+}
+
+body.light-theme .nav a:hover,
+body.light-theme .nav a.active {
+    color: #6c63ff;
+}
+
+body.light-theme .hero {
+    background: linear-gradient(135deg, #f0f2f8 0%, #e6e9f5 100%);
+}
+
+body.light-theme .hero p {
+    color: #444;
+}
+
+body.light-theme .badge {
+    background: rgba(108, 99, 255, 0.15);
+    color: #4a42b5;
+    border-color: rgba(108, 99, 255, 0.25);
+}
+
+body.light-theme .service-card,
+body.light-theme .case-card,
+body.light-theme .plan-card,
+body.light-theme .feature-card {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.06);
+}
+
+body.light-theme .service-card p,
+body.light-theme .case-card p,
+body.light-theme .plan-card ul li,
+body.light-theme .feature-card p {
+    color: #555;
+}
+
+body.light-theme .demo-chat {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .msg.bot {
+    background: #eef0f5;
+    color: #1a1a2e;
+}
+
+body.light-theme .cta {
+    background: rgba(108, 99, 255, 0.06);
+    border-top-color: rgba(108, 99, 255, 0.12);
+}
+
+body.light-theme .footer {
+    background: #1a1a2e;
+    color: #b0b8c5;
+}
+
+body.light-theme .footer a {
+    color: #b7afff;
+}
+
+body.light-theme .footer a:hover {
+    color: #fff;
+}
+
+body.light-theme .contact-form input,
+body.light-theme .contact-form textarea {
+    background: #fff;
+    border-color: #ddd;
+    color: #1a1a2e;
+}
+
+body.light-theme .contact-form input:focus,
+body.light-theme .contact-form textarea:focus {
+    border-color: #6c63ff;
+}
+
+body.light-theme .footer-bottom {
+    border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Адаптация кнопки в светлой теме */
+body.light-theme .theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
     }
 }
